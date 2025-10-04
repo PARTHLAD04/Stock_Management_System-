@@ -1,0 +1,96 @@
+Products ==>
+
+create table Products(pcode int(5) primary key auto_increment,
+pname varchar(25) not null,
+price float not null,
+discount float check(discount>=0 and discount <=100),
+units int);
+
+alter table products auto_increment=1001;
+
+delete from Products where pcode = 1003;
+
+
+
+
+
+insert into products (pname, price, discount, units) values("Butter",50,5,100);
+
+insert into products (pcode, pname, price, discount, units) values(1003,"Butter",50,5,100);
+
+
+update products set units = units - 10 where pcode = 1002;
+
+Update Products set pname = 'Onion', price = 40, discount = 6, units = 100 where pcode = 1003;
+
+
+
+
+
+
+
+
+
+
+
+c_login ==>
+
+create table c_login(email varchar(30) primary key check(email like '%@%' and email like '%.%'), password varchar(20) not null, fname varchar(20) not null, lname varchar(20) not null);
+
+
+
+
+
+insert into c_login (fname, lname, email, password) values ('Viraj', 'Parmar', 'viraj@gmail.com', 'viraj@123');
+
+select * from c_login;
+
+select email, password from c_login;
+
+select email, password from c_login where email='viraj@gmail.com' and password='viraj@123';
+
+
+
+
+
+a_login ==>
+
+create table a_login(email varchar(30) primary key check(email like '%@%' and email like '%.%'), password varchar(20) not null, fname varchar(20) not null, lname varchar(20) not null);
+
+
+
+
+
+insert into a_login (fname, lname, email, password) values ('Viraj', 'Parmar', 'viraj@gmail.com', 'viraj@123');
+
+select * from a_login;
+
+select email, password from a_login;
+
+select email, password from a_login where email='viraj@gmail.com' and password='viraj@123';
+
+
+
+
+
+
+
+Other Queries ==>
+
+-> count number of columns from the table;
+
+select count(*) 
+from information_schema.columns
+where table_name = 'c_login';
+
+
+-> count number of rows from the table;
+
+select count(*) from c_login;
+
+
+
+
+
+
+
