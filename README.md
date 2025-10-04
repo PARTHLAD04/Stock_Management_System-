@@ -170,7 +170,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- **Viraj Parmar** - *Initial work and development*
+- **Parth Lad** - *Initial work and development*
 
 ## 🙏 Acknowledgments
 
@@ -181,7 +181,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Support
 
 For support and questions, please contact:
-- Email: viraj@gmail.com
+- Email: parth@gmail.com
 - Project Repository: [Repository Link]
 
 ---
